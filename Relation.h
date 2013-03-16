@@ -26,9 +26,9 @@ public:
     Relation(Token* n, std::vector<Token*> schema);
     
     void addTuple(Fact f);
-    Relation rename(tuple, variable);
-    Relation project(tuple, variable);
-    Relation select(tuple a, variable);
+    Relation rename(string a);
+    Relation project(string a);
+    Relation select(string a);
 };
 
 #endif /* defined(__Project3__Relation__) */
