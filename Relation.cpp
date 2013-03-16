@@ -16,3 +16,5 @@ Relation::Relation (Token* n, std::vector<Token*> schema) {
     name = n->getTokensValue();
     columns = new Schema(schema);
 }
+
+//put add touple function here
