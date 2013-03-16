@@ -7,4 +7,11 @@
 //
 
 #include "Database.h"
-//this is me editing the file
+
+Database::Database() {
+    
+}
+
+void Database::addRelation(Relation* r) {
+    relations.push_back(r);
+}

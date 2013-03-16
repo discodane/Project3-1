@@ -8,11 +8,14 @@
 
 #include "Lex.h"
 #include "DatalogProgram.h"
+#include "Database.h"
 
 int main(int argc, char* argv[]) {
     Lex lex(argv[1]);
+    
     DatalogProgram* program = new DatalogProgram(lex.tokens);
     program->parse();
+    
 	if(program->success==true)
 	{
 		cout<<"Success!"<<endl;
@@ -26,6 +29,8 @@ int main(int argc, char* argv[]) {
 		cout<<k<<endl;
 		//cout the failing line;
 	}
-    std::cout << "done";
+    
+    Database* db = new Database();
+    
     return 0;
 }

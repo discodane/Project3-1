@@ -16,8 +16,10 @@
 
 class Database {
 public:
-    std::vector<Relation> relations;
+    std::vector<Relation*> relations;
     
+    Database();
+    void addRelation(Relation* r);
 };
 
 #endif /* defined(__Project3__Database__) */
