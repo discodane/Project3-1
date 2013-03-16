@@ -22,6 +22,9 @@ class Relation {
     
     Relation();
     Relation(Token* n, std::vector<Token*> schema);
+    Relation rename(string a, string b);
+    Relation select(string a);
+    Relation project(string a);
 };
 
 #endif /* defined(__Project3__Relation__) */
