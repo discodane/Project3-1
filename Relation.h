@@ -14,17 +14,18 @@
 
 #include "Tuple.h"
 #include "Schema.h"
+#include "Fact.h"
 
 class Relation {
 public:
     std::string name;
     Schema* columns;
-    std::vector<Tuple> facts;
+    std::vector<Tuple*> facts;
     
     Relation();
     Relation(Token* n, std::vector<Token*> schema);
     
-    void addTuple();
+    void addTuple(Fact f);
 };
 
 #endif /* defined(__Project3__Relation__) */

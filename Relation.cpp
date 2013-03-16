@@ -16,3 +16,7 @@ Relation::Relation (Token* n, std::vector<Token*> schema) {
     name = n->getTokensValue();
     columns = new Schema(schema);
 }
+
+void Relation::addTuple(Fact f) {
+    facts.push_back(new Tuple(f.cl));
+}
