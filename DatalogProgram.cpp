@@ -665,25 +665,3 @@ string DatalogProgram::print()
 DatalogProgram::~DatalogProgram()
 {
 }
-
-
-int main(int argc, char* argv[]) {
-    Lex lex(argv[1]);
-    DatalogProgram* program = new DatalogProgram(lex.tokens);
-    program->parse();
-	if(program->success==true)
-	{
-		cout<<"Success!"<<endl;
-		cout<<program->print();
-		//cout the the toStrings all together;
-	}
-	else 
-	{
-		cout<<"Failure!"<<endl;
-		string k=program->failure();
-		cout<<k<<endl;
-		//cout the failing line;
-	}
-    std::cout << "done";
-    return 0;
-}
