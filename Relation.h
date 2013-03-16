@@ -16,13 +16,15 @@
 #include "Schema.h"
 
 class Relation {
+public:
     std::string name;
     Schema* columns;
     std::vector<Tuple> facts;
     
     Relation();
     Relation(Token* n, std::vector<Token*> schema);
-    //Stupid change that breaks my project
+    
+    void addTuple();
 };
 
 #endif /* defined(__Project3__Relation__) */
