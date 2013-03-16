@@ -20,3 +20,15 @@ Relation::Relation (Token* n, std::vector<Token*> schema) {
 void Relation::addTuple(Fact f) {
     facts.push_back(new Tuple(f.cl));
 }
+
+Relation Relation::project(string a) {
+    
+}
+
+Relation Relation::rename(string a, string b){
+    
+}
+
+Relation Relation::select(string a){
+    
+}
