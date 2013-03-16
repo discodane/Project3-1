@@ -22,6 +22,7 @@ class Relation {
     
     Relation();
     Relation(Token* n, std::vector<Token*> schema);
+    //Stupid change that breaks my project
 };
 
 #endif /* defined(__Project3__Relation__) */
